@@ -3,18 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="1">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
-    <!--<TextView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Name"
         android:id="@+id/textViewName" />
 
@@ -23,12 +21,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:text="abcde"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="10dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Phone"
         android:id="@+id/textViewPhone" />
 
@@ -38,12 +35,11 @@
         android:id="@+id/editTextPhone"
         android:layout_gravity="right"
         android:text="##-#######"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Email Address"
         android:id="@+id/textViewEmail" />
 
@@ -53,12 +49,11 @@
         android:id="@+id/editTextEmail"
         android:text="abc@abc.com"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Feedback"
         android:id="@+id/textViewFeedback" />
 
@@ -66,20 +61,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText3"
+        android:lines="3"
         android:layout_weight="0.36"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="10dp"/>
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
-        android:id="@+id/btnSubmit" />-->
-
-    <Button
-        android:id="@+id/btn_sign_out"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_logout_from_google" />
+        android:id="@+id/btnSubmit"
+        android:layout_gravity="right" />
 
 </LinearLayout>
 </ScrollView>

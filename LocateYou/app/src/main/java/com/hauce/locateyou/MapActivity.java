@@ -9,3 +9,4 @@ public class MapActivity extends Activity {
         setContentView(R.layout.map_layout);
     }
 }
+
