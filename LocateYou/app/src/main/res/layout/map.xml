@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sails.example.MainActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/SAILSMap"
+        android:background="#ffcddbdb"
+        android:clickable="false" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <Button
+            android:id="@+id/stopRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Route"
+            android:textStyle="bold"
+            android:layout_below="@+id/spinner"
+            android:layout_alignRight="@+id/zoomin"
+            android:layout_alignEnd="@+id/zoomin" />
+
+        <Button
+            android:id="@+id/pinMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place a Pin Marker"
+            android:textStyle="bold"
+            android:layout_below="@+id/spinner"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/distanceView"
+            android:gravity="right"
+            android:textColor="@android:color/holo_blue_light"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="#80000000"
+            android:layout_below="@+id/stopRoute"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/currentFloorDistanceView"
+            android:layout_below="@+id/distanceView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="right"
+            android:textColor="@android:color/holo_orange_light"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:background="#80000000" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/msgView"
+            android:layout_below="@+id/currentFloorDistanceView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="left"
+            android:textColor="@android:color/holo_green_light"
+            android:padding="5dp"
+            android:textStyle="bold|italic"
+            android:background="#80000000" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:id="@+id/imageView3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffcddbdb" />
+
+
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:id="@+id/zoomin"
+            android:src="@drawable/zoominb"
+            android:layout_above="@+id/zoomout"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/zoomout"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:baselineAlignBottom="false"
+            android:src="@drawable/zoomoutb" />
+
+        <ImageView
+            android:id="@+id/lockcenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/center1"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
