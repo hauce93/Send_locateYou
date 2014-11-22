@@ -62,7 +62,7 @@ public class FBActivity extends FragmentActivity {
                 FragmentDirectory.class, null);
         mTabHost.addTab(mTabHost.newTabSpec("tab4").setIndicator("Track", getResources().getDrawable(R.drawable.icon_track_tab)),
                 FragmentTrack.class, null);
-        mTabHost.addTab(mTabHost.newTabSpec("tab5").setIndicator("Details", getResources().getDrawable(R.drawable.icon_details_tab)),
+        mTabHost.addTab(mTabHost.newTabSpec("tab5").setIndicator("More", getResources().getDrawable(R.drawable.icon_details_tab)),
                 FragmentDetails.class, null);
 
         FragmentTransaction transaction = fm.beginTransaction();

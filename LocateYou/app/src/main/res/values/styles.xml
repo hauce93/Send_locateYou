@@ -1,5 +1,16 @@
 <resources>
 
-    <style name="AppTheme" parent="android:Theme.NoTitleBar"></style>
+    <style name="AppTheme" parent="android:Theme.Black">
+        <item name="android:windowTitleStyle">@style/titleTextStyle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+    </style>
 
+    <style name="titleTextStyle" >
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">#000000</item>
+    </style>
 </resources>

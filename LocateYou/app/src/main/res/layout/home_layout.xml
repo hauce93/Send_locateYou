@@ -12,7 +12,7 @@
         android:src="@drawable/fci_building"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_weight="0.16" />
+        android:layout_weight="0.54" />
 
     <TextView
         android:layout_width="match_parent"

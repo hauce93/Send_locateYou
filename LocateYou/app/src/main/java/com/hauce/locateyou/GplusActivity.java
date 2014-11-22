@@ -25,7 +25,7 @@ public class GplusActivity extends Activity implements OnClickListener, Connecti
 
     private static final int RC_SIGN_IN = 0;
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "GPlusActivity";
 
     private static final int PROFILE_PIC_SIZE = 400;
 
@@ -41,7 +41,7 @@ public class GplusActivity extends Activity implements OnClickListener, Connecti
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gplus);
+        setContentView(R.layout.splash);
 
         btnSignIn = (SignInButton) findViewById(R.id.btn_sign_in);
 
@@ -124,7 +124,7 @@ public class GplusActivity extends Activity implements OnClickListener, Connecti
 
     private void updateUI(boolean isSignedIn) {
         if (isSignedIn) {
-//            startActivity(new Intent(getApplicationContext(), AndroidTabLayoutActivity.class));
+            startActivity(new Intent(getApplicationContext(), testActivity.class));
             finish();
         } else {
             startActivity(new Intent(getApplicationContext(), GplusActivity.class));

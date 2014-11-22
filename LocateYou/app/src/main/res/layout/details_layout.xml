@@ -10,67 +10,12 @@
         android:layout_height="match_parent"
         android:weightSum="1">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:id="@+id/textViewName" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:text="abcde"
-        android:layout_marginBottom="10dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Phone"
-        android:id="@+id/textViewPhone" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextPhone"
-        android:layout_gravity="right"
-        android:text="##-#######"
-        android:layout_marginBottom="10dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Email Address"
-        android:id="@+id/textViewEmail" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextEmail"
-        android:text="abc@abc.com"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="10dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Feedback"
-        android:id="@+id/textViewFeedback" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:lines="3"
-        android:layout_weight="0.36"
-        android:layout_marginBottom="10dp"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:id="@+id/btnSubmit"
-        android:layout_gravity="right" />
-
+        <com.facebook.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
 </LinearLayout>
 </ScrollView>

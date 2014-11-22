@@ -18,7 +18,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:src="@drawable/home" />
+            android:src="@drawable/ic_launcher" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,10 +45,18 @@
 
     <com.facebook.widget.LoginButton
         android:id="@+id/login_button"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        />
 
 </LinearLayout>

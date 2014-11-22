@@ -32,6 +32,7 @@ public class Splash extends Activity {
                 }finally{
 //                    startActivity(new Intent(getApplicationContext(), testActivity.class));
                       startActivity(new Intent(getApplicationContext(), FBActivity.class));
+//                      startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                     finish();
                 }
             }
